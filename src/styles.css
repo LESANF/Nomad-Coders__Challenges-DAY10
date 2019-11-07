@@ -136,4 +136,31 @@ body {
   list-style: none;
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
+}
+
+.nav__list .border {
+  border-top: 2px solid #3f67ff;
+}
+
+.border .nav__list-links {
+  color: #3f67ff;
+}
+
+.nav__list-items a {
+  color: #97a6c0;
+}
+
+.nav__list-items {
+  position: relative;
+}
+
+.nav__list-items .middle__route {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: -10px;
+  background-color: #3f67ff;
+  color: white;
+  border-radius: 100%;
 }
