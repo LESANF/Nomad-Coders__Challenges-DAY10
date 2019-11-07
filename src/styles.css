@@ -89,6 +89,11 @@ body {
   opacity: 0.4;
 }
 
+.travel__star {
+  width: 100%;
+  position: relative;
+}
+
 .travel__star span {
   color: #ffbc00;
 }
@@ -96,9 +101,39 @@ body {
 .travel__star .score {
   color: black;
   font-weight: bold;
+  margin-left: 5px;
 }
 
 .travel__star .distance {
   color: black;
   opacity: 0.4;
+  position: absolute;
+  right: 0;
+}
+
+.travel__description {
+  display: flex;
+  flex-direction: column;
+}
+
+.travel__description .description__title {
+  opacity: 0.4;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.travel__description .description__contents {
+  opacity: 0.7;
+}
+
+.travel__description .description__end {
+  color: #3f67ff;
+  font-weight: bold;
+}
+
+.nav .nav__list {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
