@@ -1,9 +1,37 @@
-* {
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+/* * {
   box-sizing: border-box;
-}
+} */
 
 body {
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: gray;
+  font-family: "Open Sans", sans-serif;
+}
+
+.bigframe {
+  background-image: url("images/bigback.jpg");
+  padding: 15px 30px 45px 25px;
+  width: 400px;
+  height: 900px;
+  border-radius: 30px;
+  background-color: #cccccc;
+}
+
+.greece {
+}
+
+.phone {
+  margin-bottom: 200px;
+}
+
+.phone .screen {
+  margin-bottom: 35px;
 }
 
 .screen .status-bar {
@@ -16,22 +44,31 @@ body {
   justify-content: space-between;
 }
 
+.header__column {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header__column .header__back-btn {
+  color: black;
+}
+
 .bubble-images {
+  margin-bottom: 30px;
   display: flex;
   justify-content: flex-end;
 }
 
 .bubble-images img,
 .bubble-images .bubble__more {
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   border-radius: 10px;
   margin-left: 7px;
 }
 
 .bubble-images .bubble__more {
   color: white;
-  font-weight: bold;
   background-color: #3f67ff;
   display: flex;
   justify-content: center;
@@ -39,22 +76,26 @@ body {
 }
 
 .bubble-comments {
+  margin-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   width: 100%;
 }
 
 .bubble-comments span {
+  font-size: 14px;
+  font-weight: 700;
   background-color: #dce3f9;
   color: #3f67ff;
   height: 25px;
-  margin-right: 10px;
+  margin-right: 7px;
   border-radius: 20px;
   border-bottom-left-radius: 0;
   padding: 4px 15px 27px 15px;
 }
 
 .travel__title {
+  margin-bottom: 12px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,7 +109,7 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 100%;
-  background-color: blue;
+  background-color: ivory;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -76,6 +117,11 @@ body {
 
 .travel__title i {
   color: red;
+}
+
+.travel__locate {
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .travel__locate i {
@@ -90,6 +136,7 @@ body {
 }
 
 .travel__star {
+  margin-bottom: 30px;
   width: 100%;
   position: relative;
 }
@@ -105,6 +152,7 @@ body {
 }
 
 .travel__star .distance {
+  font-weight: bold;
   color: black;
   opacity: 0.4;
   position: absolute;
@@ -112,17 +160,21 @@ body {
 }
 
 .travel__description {
+  margin-bottom: 80px;
   display: flex;
   flex-direction: column;
 }
 
 .travel__description .description__title {
+  margin-bottom: 13px;
   opacity: 0.4;
   font-size: 10px;
   font-weight: bold;
 }
 
 .travel__description .description__contents {
+  line-height: 1.8;
+  margin-bottom: 15px;
   opacity: 0.7;
 }
 
@@ -131,42 +183,67 @@ body {
   font-weight: bold;
 }
 
+.nav {
+  background-color: red;
+}
 .nav .nav__list {
-  padding-left: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
   font-size: 20px;
+  position: relative;
+  margin-bottom: 35px;
 }
 
-.nav__list .border {
-  border-top: 2px solid #3f67ff;
+.nav__list-links {
+  color: #97a6c0;
 }
 
 .border .nav__list-links {
   color: #3f67ff;
 }
 
-.nav__list-items a {
-  color: #97a6c0;
+.nav__list .border {
+  border-top: 2px solid #3f67ff;
+  margin-right: 20px;
 }
 
-.nav__list-items {
-  position: relative;
+.nav__list .user {
+  margin-left: 20px;
 }
 
-.nav__list-items .middle__route {
-  width: 45px;
-  height: 45px;
-  position: absolute;
-  top: -45px;
+.nav__list .nav__list-items {
+  text-align: center;
+  padding-top: 15px;
+  width: 40px;
+}
+
+.nav__list .route {
+  width: 50px;
+  height: 50px;
   background-color: #3f67ff;
-  color: white;
   border-radius: 100%;
   display: flex;
-}
-
-.middle__route {
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: -26px;
+  left: 50%;
+  transform: translate(-50%);
+  padding-top: 0;
+  border: 3px solid black;
+  box-shadow: 0px 0px 0px 13px grey;
+}
+
+.route .nav__list-links {
+  color: white;
+}
+
+.border-line {
+  height: 3px;
+  width: 93px;
+  background-color: rgb(182, 182, 182);
+  opacity: 0.5;
+  margin: auto;
+  text-align: center;
+  margin-bottom: -34px;
 }
